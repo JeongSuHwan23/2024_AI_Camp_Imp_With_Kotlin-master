@@ -1,6 +1,6 @@
 package hello.aicampassignment.dto
 
-data class UrlModelResponse (
+data class ㄴUrlModelResponse (
     val original_url: String,
 
     val encoded_url: String,
