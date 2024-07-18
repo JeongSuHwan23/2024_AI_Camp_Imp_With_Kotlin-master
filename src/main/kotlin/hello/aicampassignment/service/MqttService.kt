@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 @Service
 class MqttService {
   @MessagingGateway(defaultRequestChannel = "mqttOutboundChannel")
-  interface MqttGateway{
+  interface MqttGateway {
     fun sendToMqtt(@Payload data: String)
   }
 }

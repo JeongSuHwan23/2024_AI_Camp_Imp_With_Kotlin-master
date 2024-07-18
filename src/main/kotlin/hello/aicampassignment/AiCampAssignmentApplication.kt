@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class AiCampAssignmentApplication
 
 fun main(args: Array<String>) {
-    runApplication<AiCampAssignmentApplication>(*args)
+  runApplication<AiCampAssignmentApplication>(*args)
 }

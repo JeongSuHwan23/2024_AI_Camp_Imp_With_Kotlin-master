@@ -10,6 +10,7 @@ import java.time.LocalDateTime
 interface UrlModelRepository : JpaRepository<Url, Long> {
   fun findByEncodedUrl(findByEncodedUrl: String): Url?
   fun findByOriginalUrl(originalUrl: String): Url?
+
   @Query("SELECT u FROM Url u WHERE u.createdAt > :createdAfter")
   fun findAllCreatedAfter(@Param("createdAfter") createdAfter: LocalDateTime): List<Url>
 }

@@ -12,7 +12,7 @@ import java.time.LocalDateTime
 
 @Entity
 @Table(name = "Mqtt_Message")
-data class MqttMessage (
+data class MqttMessage(
         @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
         val di: Long = 0,
 

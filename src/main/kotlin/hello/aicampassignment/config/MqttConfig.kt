@@ -1,4 +1,3 @@
-
 package hello.aicampassignment.config
 
 import hello.aicampassignment.dto.MqttRequest
@@ -25,6 +24,7 @@ import java.time.LocalDateTime
 @Configuration
 class MqttConfig {
   private val brokerUrl = "tcp://localhost:1883"
+
   //private val brokerUrl = "tcp://10.150.150.90:1883"
   private val clientId = "userskin1"
   private val topic = "bssm"

@@ -33,14 +33,16 @@ class UrlModelService(val urlModelRepository: UrlModelRepository) {
     val url = Url(
             originalUrl = originalUrl,
             encodedUrl = encodedUrl,
-            createdAt  = LocalDateTime.now()
+            createdAt = LocalDateTime.now()
     )
 
     return urlModelRepository.save(url)
   }
+
   companion object {
     val ORIGIN_URL: String = "http://localhost:8090/short-url/"
   }
+
   fun findUrlsCreatedAfter(createdAfter: LocalDateTime): List<Url> {
     return urlModelRepository.findAllCreatedAfter(createdAfter)
   }

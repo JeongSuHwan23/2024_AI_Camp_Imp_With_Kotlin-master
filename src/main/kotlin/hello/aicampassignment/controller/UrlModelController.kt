@@ -32,6 +32,7 @@ class UrlModelController(
     val filterTime = createdAfter ?: defaultTime
     return urlModelService.findUrlsCreatedAfter(filterTime)
   }
+
   @GetMapping("/api/short-url/{encodedUrl}")
   fun redirect(
           @PathVariable encodedUrl: String,
